@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andrey Pérez Gutiérrez">
+    <title>PGTech</title>
+    <link rel="stylesheet" href="Estilos.css">
+</head>
+
+<body>
+    <address>
+        Escrito por <a href="mailto:andreyperez109@gmail.com">Andrey Pérez Gutiérrez</a>
+        <br />
+        Costa Rica, Heredia, San Rafael, Getsemaní.
+    </address>
+    <img src="Imagenes/MapaCostaRica.png" usemap="#mapaCostaRica" width="200" height="200" alt="Mapa de Costa Rica">
+
+    <map name="mapaCostaRica">
+
+        <area shape="circle" coords="110,50,40" href="https://es.wikipedia.org/wiki/Cantón_de_San_Rafael"
+            alt="San Rafael">
+    </map>
+
+    <iframe width="200" height="200" src="https://www.youtube.com/embed/921rsaF816A?si=lrwMOs4k6rHA4H2c"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+
+    <picture>
+        <source srcset="Imagenes/SanRafaelGrande.jpg" media="(min-width: 800px)">
+        <source srcset="Imagenes/SanRafaelMediano.jpg" media="(min-width: 600px)">
+        <img src="Imagenes/SanRafaelPequeno.jpg" alt="San Rafael de Heredia">
+    </picture>
+
+    <b>
+        <p>Preciona Heredia en el mapa para ver la información de San Rafael.</p>
+    </b>
+
+    <img src="Imagenes/Yo.png" alt="Foto del autor" width="50" height="50">
+
+    <time datetime="2025-05-22">22 de mayo del 2025</time>
+    <hgroup>
+        <h1 style="text-align: center;">PGTech</h1>
+
+        <h2>A continuación se mostrará una lista de los <i>componentes que se ofrecen</i> en esta página:</h2>
+        <!-- Aqui uso el i para enfatizar en los componentes que se ofrecen -->
+    </hgroup>
+
+    <dialog id="eliminado">
+        <p>Este componente fue eliminado recientemente</p>
+        <button onclick="document.getElementById('eliminado').close()">Cerrar</button>
+    </dialog>
+
+    <ul>
+        <ins>
+            <li>Teclados</li>
+        </ins>
+        <li><data value="123456">Procesadores</data> -> <a href="https://concepto.de/procesador/">click aquí para más
+                información</a></li>
+
+        <!-- El data es por ejemplo para darle un identificador a algo que luego se puede leer para hacer cosas con ese Id. -->
+
+        <li>Tarjetas Gráficas</li>
+        <li>Tarjetas madre</li>
+        <li>Memorias RAM</li>
+        <del>
+            <li onclick="document.getElementById('eliminado').showModal()"
+                style="cursor: pointer; text-decoration: underline;">Dispositivos de almacenamiento</li>
+        </del>
+        <li>Monitores<sub>1</sub></li>
+    </ul>
+
+    <figure>
+        <img src="Imagenes/componentes.png" alt="Componentes">
+        <figcaption>Componentes <em>ofrecidos</em></figcaption>
+        <!-- Use Aqui el em para enfatizar en que son los ofrecidos -->
+    </figure>
+
+    <span class="estilospan">
+        <details>
+
+            <summary style="text-align: center; font-size: 20px;"><strong>Información de los componentes</strong>
+            </summary>
+
+            <div style="color: rgb(46, 46, 46); font-size: 16px;">
+                <dl>
+                    <dt><mark>Procesadores</mark></dt>
+                    <dd><q>El procesador es el cerebro del sistema, justamente procesa todo lo que ocurre en la <dfn
+                                title="Computadora personal">PC</dfn> y ejecuta todas las acciones que existen</q>.</dd>
+
+                    <dt><abbr title="Graphics Processing Unit (Unidad de procesamiento gráfico)"><mark>GPU</mark></abbr>
+                    </dt>
+                    <dd>La tarjeta gráfica se encarga de procesar y generar imágenes en la pantalla de una computadora.
+                    </dd>
+
+                    <dt><mark>Tarjetas madre</mark></dt>
+                    <dd>Es la pieza que conecta y permite la comunicación entre todos los componentes de la computadora.
+                    </dd>
+
+                    <dt><mark>Memorias RAM</mark></dt>
+
+                    <dd>Memoria principal de un ordenador, <br> donde se almacena temporalmente la información que el
+                        procesador
+                        necesita para realizar tareas.
+                    </dd>
+
+                </dl>
+                <p>Para mas información puedes encontrarla en el libro <cite>Estructura y Tecnología de
+                        Computadoras</cite>.
+                </p>
+
+            </div>
+        </details>
+    </span>
+
+    <br><br><br><br>
+    <details>
+
+        <summary style="text-align: center; font-size: 20px;">
+            Pequeño video de como <em>armar una PC</em>
+        </summary>
+
+        <video width="600" controls>
+            <source src="Imagenes/ArmadoPC.mp4" type="video/mp4">
+            <track src="Subtitulos/subtitulosArmadoPC.vtt" kind="subtitles" srclang="es" label="Español">
+            Tu navegador no soporta el elemento de video.
+        </video>
+
+    </details>
+</body>
+<footer>
+    <p>
+        <small>
+            <sub>1</sub>Monitores desde los 40 cm<sup>2</sup> hasta los 100 cm<sup>2</sup>
+        </small>
+    </p>
+
+    <svg width="150" height="150">
+        <circle cx="100" cy="100" r="5" fill="red" />
+    </svg>
+</footer>
+
+</html> 
